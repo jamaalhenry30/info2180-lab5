@@ -1,1 +1,80 @@
-/* Add your own styles */
+body{
+    margin: 0%;
+   font-size: 16px;
+   min-height:100%; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.divs{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "top"
+        "mains"
+        "footer"
+}
+
+#div1{
+    grid-area: top;
+    background-color: blue;
+    padding-bottom: 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#div2{
+    grid-area: mains;
+    margin-top: 2%;
+
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.buttons{
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: 	#32CD32;
+    padding: 10px;
+    border-radius: 5%;
+}
+#div3{
+    grid-area: footer;
+    margin-top: 2%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+tr:hover {background-color: yellow;}
+
+input[type=search], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin-right: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
